@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#7B1FA2</color>
+    <color name="primaryDark">#6A1B9A</color>
+    <color name="accent">#DD2C00</color>
+    <color name="material_red_400">#EF5350</color>
+
+    <!-- Camomile colors -->
+    <color name="dark_gray_background">#ff404040</color>
+    <color name="ios_gray_text">#E91E63</color>
+    <color name="standard_white">#FFFFFF</color>
+
+    <!--IOS colors from http://ios7colors.com/-->
+    <color name="dark_gray">#8E8E93</color>
+    <color name="gray">#BDBEC2</color>
+    <color name="light_gray">#C7C7CC</color>
+
+    <color name="coloraccent">#fa6565</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="app_color">#fa6565</color>
+    <color name="app_color_one">#FF7356</color>
+    <color name="app_color_two">#F72D79</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#2F2F2F</color>
+    <color name="blue">#2781eb</color>
+    <color name="graycolor">#D3D3D3</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="darkgray">#93959A</color>
+    <color name="dimgray">#696969</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="transparentBlack">#3C3C3C</color>
+    <color name="green">#04b110</color>
+    <color name="light_white">#fffefe</color>
+    <color name="off_white">#f8f6f8</color>
+    <color name="light_blue">#00c5ec</color>
+    <color name="red">#c94844</color>
+    <color name="delete_message_bg">#f2f2f2</color>
+    <color name="delete_message_text">#b8b8b8</color>
+    <color name="pink_color">#fa6565</color>
+
+    <color name="purple_color">#6c2fbb</color>
+    <color name="light_purple_color">#a532e5</color>
+
+    <color name="lightgraycolor">#f2f2f2</color>
+
+    <color name="newGrayColor">#e3ebf2</color>
+    <color name="newGrayTextColor">#9b9b9b</color>
+    <color name="newLightGray">#b8bbc2</color>
+    <color name="newLightGray1">#f6f7fb</color>
+
+    <color name="chipColor">#b4b9c6</color>
+    <color name="chipBorderColor">#d4d9df</color>
+
+    <color name="newBoostColor">#774fb9</color>
+    <color name="newLocationColor">#3292f9</color>
+    <color name="newControlColor">#f5a275</color>
+    <color name="newRewindColor">#fdb525</color>
+    <color name="newLikeColor">#78cbc4</color>
+    <color name="newSuperLikeColor">#2ab5ff</color>
+
+    <color name="boostColor">#f4f6fa</color>
+
+    <color name="fifty_black">#802F2F2F</color>
+
+
+
+</resources>

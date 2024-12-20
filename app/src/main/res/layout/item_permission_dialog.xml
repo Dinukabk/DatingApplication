@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_2sdp"
+    android:layout_gravity="center">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/d_round_white_bkg">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:includeFontPadding="false"
+           android:text="@string/photo_access"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_15sdp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:layout_marginStart="@dimen/_15sdp"
+           android:lineSpacingExtra="@dimen/_2sdp"
+           android:layout_marginEnd="@dimen/_15sdp"
+           android:gravity="center"
+           android:text="@string/to_upload_photos_from"
+           android:textSize="@dimen/_12sdp"
+           android:lineSpacingMultiplier="1.2"
+           android:textColor="@color/newGrayTextColor"/>
+
+       <RelativeLayout
+           android:id="@+id/okBtn"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_40sdp"
+           android:layout_marginTop="@dimen/_16sdp"
+           android:background="@drawable/d_round_pink_bkg">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:includeFontPadding="false"
+               android:layout_centerInParent="true"
+               android:text="@string/okay"
+               android:textColor="@color/white"
+               android:textSize="@dimen/_11sdp"/>
+
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

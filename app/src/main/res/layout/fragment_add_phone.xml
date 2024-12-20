@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/main_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/main_div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text=""
+                android:textColor="@color/dimgray"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:id="@+id/line_beside_country"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/country_code"
+                android:background="@color/graycolor" />
+
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/line_beside_country"
+                android:backgroundTint="@color/transparent"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor"
+                android:textSize="@dimen/_11sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_below_et"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/main_div"
+            android:background="@color/graycolor" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/line_below_et">
+
+            <RelativeLayout
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/ic_google_background"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_24sdp">
+
+                <TextView
+                    android:id="@+id/continue_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/continue_capital"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

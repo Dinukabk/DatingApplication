@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:paddingStart="@dimen/_12sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:id="@+id/user_image"
+        android:layout_centerVertical="true"
+        app:roundAsCircle="true"
+        app:placeholderImageScaleType="centerCrop"
+        app:actualImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/ic_user_icon" />
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/user_image">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Username"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/unblock"
+            android:id="@+id/unblockBtn"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/d_round_pink_border"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_alignParentBottom="true"
+        android:background="@color/graycolor"/>
+
+</RelativeLayout>
+

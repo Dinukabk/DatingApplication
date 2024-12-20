@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivitiesFragments.VideoCalling.VideoActivity">
+
+    <include layout="@layout/content_video" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:id="@+id/calling_user_info_layout"
+        android:background="@color/pink_color">
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:pulse_count="4"
+            app:pulse_duration="10000"
+            app:pulse_repeat="1000"
+            app:pulse_color="@color/white"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="Linear">
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="100dp"
+                android:id="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/calling_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/calling"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardCornerRadius="@dimen/_45sdp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/profile_image_placeholder"
+                    android:id="@+id/userimage"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/receive_disconnect_layout"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/cancel_incoming_btn"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_cancel_incoming_white" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/pick_incoming_call"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/receive_call"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/cancel_call"
+                android:layout_marginBottom="60dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_cancel_incoming_white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/calling_action_btns">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/connect_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:fabSize="normal"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_call_end_pink_24px" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/switch_camera_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fabSize="normal"
+            app:backgroundTint="@color/white"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_switch_camera_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/local_video_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            app:fabSize="normal"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_videocam_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mute_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mic_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/speaker_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_volume_up_white_24dp"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

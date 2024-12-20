@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ViewFlipper
+        android:id="@+id/viewflliper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/confirmation_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d_bottom_gray_line">
+
+                    <ImageButton
+                        android:id="@+id/Goback"
+                        android:layout_width="48dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_back"
+                        android:scaleType="fitStart"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/forgot_pass"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/pink_color"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:paddingTop="15dp"
+                        android:text="@string/we_ll_email_you_a_code"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/recover_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/transparent"
+                        android:hint="@string/email_address"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graycolor"
+                        android:textSize="14dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/graycolor" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/ic_google_background"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_24sdp">
+
+                        <TextView
+                            android:id="@+id/emailBtnText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/reset"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d_bottom_gray_line">
+
+                    <ImageButton
+                        android:id="@+id/Goback2"
+                        android:layout_width="48dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_back"
+                        android:scaleType="fitStart"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent"/>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_4_digit_code"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/gray"
+                            android:id="@+id/edit_email"
+                            android:text="@string/your_code_was_emailed_to"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.chaos.view.PinView
+                            android:id="@+id/et_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:cursorVisible="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="22dp"
+                            app:hideLineWhenFilled="false"
+                            app:itemCount="4"
+                            app:itemHeight="70dp"
+                            app:itemSpacing="10dp"
+                            app:itemWidth="65dp"
+                            app:lineColor="@color/gray"
+                            app:viewType="line"
+                            android:theme="@style/CustomTheme"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/otpBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/ic_google_background"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_24sdp">
+
+                        <TextView
+                            android:id="@+id/otpBtnText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/next"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl1_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv1_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/resend_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/resend_code"
+                        android:textColor="@color/pink_color"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/d_bottom_gray_line">
+
+                    <ImageButton
+                        android:id="@+id/Goback3"
+                        android:layout_width="48dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_back"
+                        android:scaleType="fitStart"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent"/>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/main_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/main_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_password"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:paddingTop="15dp"
+                        android:text="@string/use_characters_from_at_least_"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/ed_new_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/transparent"
+                        android:hint="@string/password"
+                        android:inputType="text"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graycolor"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/line_below_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/graycolor" />
+
+                    <RelativeLayout
+                        android:id="@+id/changePasswordBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/ic_google_background"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_24sdp">
+
+                        <TextView
+                            android:id="@+id/changePasswordBtnTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/next"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</FrameLayout>

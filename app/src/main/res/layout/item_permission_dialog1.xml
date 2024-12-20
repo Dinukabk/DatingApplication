@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_2sdp"
+    android:layout_gravity="center">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/d_round_white_bkg">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:includeFontPadding="false"
+           android:text="@string/camera_and_microphone_access"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_15sdp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:layout_marginStart="@dimen/_15sdp"
+           android:lineSpacingExtra="@dimen/_2sdp"
+           android:layout_marginEnd="@dimen/_15sdp"
+           android:gravity="center"
+           android:text="@string/for_audio_or_video"
+           android:textSize="@dimen/_12sdp"
+           android:lineSpacingMultiplier="1.2"
+           android:textColor="@color/newGrayTextColor"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2"
+           android:layout_marginTop="@dimen/_16sdp">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/cancelTv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="@dimen/_10sdp"
+                   android:paddingBottom="@dimen/_10sdp"
+                   android:text="@string/cancel_capi"
+                   android:gravity="center"
+                   android:textSize="@dimen/_11sdp"
+                   android:textColor="@color/newGrayTextColor"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/okayTv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="@dimen/_10sdp"
+                   android:paddingBottom="@dimen/_10sdp"
+                   android:text="@string/okay"
+                   android:gravity="center"
+                   android:textSize="@dimen/_11sdp"
+                   android:textColor="@color/pink_color"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".ActivitiesFragments.Accounts.WebviewA">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/webview"
+            android:layout_alignParentTop="true"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_bar"/>
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_12sdp"
+            android:src="@drawable/ic_cross"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

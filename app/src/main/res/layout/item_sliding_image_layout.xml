@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/delete_message_bg"
+        android:id="@+id/image"
+        fresco:placeholderImage="@drawable/ic_user_icon"
+        app:placeholderImageScaleType="fitCenter"
+        app:actualImageScaleType="centerCrop"
+        />
+
+</RelativeLayout>

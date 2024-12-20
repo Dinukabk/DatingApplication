@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527901173393",
+    "project_id": "romanzu-b7674",
+    "storage_bucket": "romanzu-b7674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527901173393:android:15ff9dae181b23bf2d8130",
+        "android_client_info": {
+          "package_name": "com.romapp.romanzu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpXHjUkR4sA-H8PuL8FCq7JO_D2XveF68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527901173393:android:c9f83e95512211562d8130",
+        "android_client_info": {
+          "package_name": "com.romn.romanzu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpXHjUkR4sA-H8PuL8FCq7JO_D2XveF68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

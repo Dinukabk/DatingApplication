@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">أدر عكس اتجاه عقارب الساعة</string>
+    <string name="crop_image_menu_rotate_right">أدر</string>
+    <string name="crop_image_menu_crop">قُصّ</string>
+    <string name="crop_image_menu_flip">اقلب</string>
+    <string name="crop_image_menu_flip_horizontally">اقلب أفقيًا</string>
+    <string name="crop_image_menu_flip_vertically">اقلب رأسيًا</string>
+
+    <string name="pick_image_intent_chooser_title">اختر مصدرًا</string>
+
+    <string name="crop_image_activity_no_permissions">إلغاء؛ الأذونات المطلوبة غير ممنوحة</string>
+
+    <string name="chat">دردشة</string>
+    <string name="send_message_here">أرسل رسالة هنا...</string>
+
+
+    <string name="enable_location">تمكن موقع</string>
+    <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_binder">ستحتاج إلى تمكين موقعك من أجل استخدام الموثق</string>
+    <string name="allow_location">السماح للموقع</string>
+
+
+    <string name="first_name">الاسم الاول</string>
+    <string name="male">الذكر</string>
+    <string name="female">أنثى</string>
+    <string name="next">التالى</string>
+
+    <string name="login_description_1">اكتشف أشخاصًا جدد ومثيرين للاهتمام \n بالقرب منهم</string>
+    <string name="login_description_2">مرر سريعًا لليمين مثل شخص ما \n أو مرر سريعًا لليسار لتمريره</string>
+    <string name="login_description_3">إذا قاموا أيضًا بالتمرير سريعًا لليمين ، فهذه مطابقة!</string>
+    <string name="continue_with_facebook">تواصل مع الفيسبوك</string>
+    <string name="continue_with_google">تابع مع Google</string>
+    <string name="continue_with_phone">تواصل مع الهاتف</string>
+    <string name="we_don_t_post_anything_to_facebook">نحن لا ننشر أي شيء على Facebook.</string>
+
+
+
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="location">موقعك</string>
+    <string name="save_location">حفظ الموقع</string>
+
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="done">فعله</string>
+    <string name="about_profile_name">حول</string>
+    <string name="about">حولك</string>
+    <string name="job_title">المسمى الوظيفي</string>
+    <string name="company">شركة</string>
+    <string name="gender">جنس</string>
+
+    <string name="new_matches">مباريات جديدة</string>
+    <string name="no_other_match_found_yet">لم يتم العثور على تطابق آخر حتى الآن.</string>
+    <string name="message">رسالة</string>
+
+    <string name="it_s_match">انها مباراة!</string>
+    <string name="you_and_alison_likes_each_other">أنت وأليسون يحبان بعضهما البعض</string>
+    <string name="send_a_message">ارسل رسالة</string>
+
+    <string name="settings">إعدادات</string>
+
+
+
+    <string name="swiping_in">الضرب</string>
+    <string name="my_current_location">موقعي الحالي</string>
+    <string name="add_new_location">إضافة موقع جديد</string>
+    <string name="show_me">أرني</string>
+    <string name="men">رجال</string>
+    <string name="women">نساء</string>
+    <string name="maximum_distance">المسافة القصوى</string>
+    <string name="mile">ميل</string>
+    <string name="miles">اميال</string>
+    <string name="age_range">الفئة العمرية</string>
+    <string name="year">عام</string>
+    <string name="years">سنوات</string>
+    <string name="show_me_on_binder">أرني على الموثق</string>
+    <string name="don_t_show_my_age">لا تظهر عمري</string>
+    <string name="make_my_distance_invisible">جعل مسافة غير مرئية</string>
+    <string name="legal">قانوني</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="delete_account">حذف الحساب</string>
+
+
+    <string name="cancel">إلغاء</string>
+    <string name="update">تحديث</string>
+
+
+    <string name="username">اسم المستخدم</string>
+    <string name="your_message">رسالتك</string>
+
+
+    <string name="report">نقل</string>
+
+    <string name="are_you_sure">هل أنت واثق؟</string>
+
+    <string name="delete_account_description">حذف الحساب سوف يمحو جميع بياناتك بالكامل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+
+    <string name="are_you_sure_report_user">هل أنت متأكد من الإبلاغ عن هذا المستخدم؟</string>
+    <string name="delete_this_message">احذف هذه الرسالة</string>
+    <string name="unmatch_this_user">إلغاء تطابق هذا المستخدم</string>
+    <string name="unblock_this_user">قم بإلغاء حظر هذا المستخدم</string>
+    <string name="block_this_user">الحظر والإبلاغ</string>
+    <string name="block">Block</string>
+    <string name="unblock">UnBlock</string>
+    <string name="are_you_sure_block_user">Are you sure to block this user?</string>
+
+    <string name="calling">جارٍ الاتصال ...</string>
+    <string name="reconnecting_to">جارٍ إعادة الاتصال بـ</string>
+    <string name="reconnecting">جارٍ إعادة الاتصال</string>
+    <string name="connected_to">متصلا</string>
+    <string name="connected">متصل</string>
+    <string name="failed_to_connect">فشل الاتصال</string>
+    <string name="disconnected">انقطع الاتصال</string>
+    <string name="disconnected_from">تم قطع الاتصال بـ</string>
+    <string name="audio_connected">تم توصيل الصوت</string>
+    <string name="audio_unpublished">صوت غير منشور</string>
+    <string name="video_connected">تم توصيل الفيديو</string>
+    <string name="video_unpublished">فيديو غير منشور</string>
+    <string name="audio_subscribed">تم اشتراك الصوت</string>
+    <string name="audio_unsubscribed">إلغاء الاشتراك في الصوت</string>
+    <string name="audio_subscription_failed">فشل الاشتراك الصوتي</string>
+    <string name="video_subscribed">تم اشتراك الفيديو</string>
+    <string name="video_unsubscribed">فيديو غير مشترك</string>
+    <string name="video_subscription_failed">فشل الاشتراك في الفيديو</string>
+    <string name="joined">انضم</string>
+    <string name="ringing">رنين...</string>
+    <string name="alert">إنذار</string>
+    <string name="voice_reah_limit">لقد وصلت إلى حد مكالماتك الصوتية.</string>
+    <string name="video_reach_limit">لقد تجاوزت حد مكالمات الفيديو.</string>
+
+    <string name="you_need_to_enable_gps_location_to_connect_nearby_user">تحتاج إلى تمكين موقع GPS للاتصال بالمستخدم القريب</string>
+    <string name="enable">يُمكَِن</string>
+    <string name="GPS_location_status_">حالة موقع GPS؟</string>
+
+
+    <string name="no_internet">لا انترنت. اتصل بشبكة واي فايأو شبكة خلوية.</string>
+    <string name="discovery_settings">إعدادات الاكتشاف</string>
+    <string name="language">لغة</string>
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">بريد إلكتروني</string>
+    <string name="phone">هاتف</string>
+    <string name="please_grant_permission">الرجاء منح الإذن</string>
+    <string name="resend_code">إعادة إرسال الرمز</string>
+    <string name="code_is_invalid">الرمز غير صالح</string>
+    <string name="your_code_was_emailed_to">تم إرسال رمزك عبر البريد الإلكتروني إلى</string>
+    <string name="login_cancel">تسجيل الدخول إلغاء</string>
+    <string name="please_enter_valid_new_password">الرجاء إدخال كلمة مرور جديدة صالحة</string>
+    <string name="please_enter_valid_password">الرجاء إدخال كلمة مرور صالحة</string>
+    <string name="login_error">خطأ في تسجيل الدخول</string>
+    <string name="error">خطأ</string>
+    <string name="create_password">أنشئ كلمة مرور</string>
+    <string name="use_characters_from_at_least_">استخدم 8-20 حرفًا من فئتين على الأقل: أحرف وأرقام وأحرف خاصة</string>
+    <string name="password">كلمه السر</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="we_ll_email_you_a_code">سنرسل إليك رمزًا عبر البريد الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك.</string>
+    <string name="email_address">عنوان البريد الإلكتروني</string>
+    <string name="reset">إعادة ضبط</string>
+    <string name="enter_4_digit_code">أدخل الرمز المكون من 4 أرقام</string>
+    <string name="invalid_phone_number">رقم الهاتف غير صحيح</string>
+    <string name="select_country">حدد الدولة</string>
+    <string name="your_code_was_sent_to">تم إرسال رمزك إلى</string>
+    <string name="please_Wait">ارجوك انتظر</string>
+    <string name="recording">تسجيل...</string>
+    <string name="hold_Mic_Button_to_Record">اضغط باستمرار على زر الميكروفون للتسجيل</string>
+    <string name="stop_Recording">إيقاف التسجيل...</string>
+    <string name="for_demo_purpose">لغرض العرض نحن نسمح فقط بـ</string>
+    <string name="choose_from_Gallery">اختر من المعرض</string>
+    <string name="tap_again">اضغط مرة أخرى</string>
+    <string name="camera_permission_denied">تم رفض إذن الكاميرا</string>
+    <string name="About">حول</string>
+    <string name="passions">العواطف</string>
+    <string name="edit_info">تحرير المعلومات</string>
+    <string name="add_media">أضف وسائط</string>
+    <string name="photo_tip_want_more_matches_ditch_the_selfie">نصيحة بالصورة: هل تريد المزيد من التطابقات؟ تخلص من سيلفي</string>
+    <string name="my_binder_plus">لي بيندر زائد®</string>
+
+
+
+    <string name="are_you_sure_to_delete_this_picture">هل أنت متأكد من حذف هذه الصورة؟</string>
+    <string name="show_on_Card_text">أثناء إيقاف التشغيل ، لن تظهر في حزمة البطاقات. قد يظل الأشخاص الذين أعجبتهم بالفعل يرون ملفك الشخصي ويتطابقون معك. لا يزال بإمكانك مشاهدة مبارياتك والدردشة معها.</string>
+    <string name="ager_preference_txt">يستخدم بيندر هذه التفضيلات لاقتراح التطابقات. قد لا تقع بعض اقتراحات المطابقة ضمن الأبوين المرغوبة.</string>
+    <string name="terms_of_services">شروط الخدمة</string>
+
+    <string name="licenses">التراخيص</string>
+
+    <string name="version">إصدار</string>
+    <string name="help_support"><![CDATA[ساعد لدعم]]></string>
+
+    <string name="miles_away">على بعد أميال</string>
+    <string name="km_away">كم</string>
+    <string name="GETBINDERPLUS">احصل على بيندر بلس</string>
+    <string name="Seewholikesyoumore">انظر من يحبك وأكثر!</string>
+    <string name="Getmatchesfaster">احصل على مباريات أسرع</string>
+    <string name="StandoutwithSuperLikes">تميز مع سوبر لايكات</string>
+    <string name="Youre3timesmorelikelyogetamatch">احتمال حصولك على مباراة أكثر بثلاث مرات!</string>
+    <string name="Likeprofilesaroundtheworld">مثل التشكيلات حول العالم</string>
+    <string name="PassporttoanywherewithBinderPlus">جواز السفر إلى أي مكان مع بيندر زائد®!</string>
+    <string name="ControlYourProfile">تحكم في ملف التعريف الخاص بك</string>
+    <string name="LimitwhatotherseewithBinderPlus">حدد ما يراه الآخرون باستخدام بيندر زائد®</string>
+    <string name="RewindyourLikeorNope">الترجيع إلى الوراء "أعجبك" أو "لا"</string>
+    <string name="GetunlimitedRewindswithBinderPlus">احصل على مرات ترجيع غير محدودة مع بيندر زائد®!</string>
+    <string name="GetunlimitedlikeswithBinderPlus">احصل على إعجابات غير محدودة مع بيندر زائد®!</string>
+    <string name="Increaseyourchances">زيادة فرصك</string>
+    <string name="school">المدرسة</string>
+
+    <string name="show_distance_in">إظهار المسافة في</string>
+    <string name="mi">مي.</string>
+    <string name="km">كم.</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="search">يبحث</string>
+    <string name="matches">اعواد الكبريت</string>
+    <string name="add_university">اضافة جامعة</string>
+    <string name="add_company">أضف شركة</string>
+    <string name="add_job_title">أضف المسمى الوظيفي</string>
+    <string name="add_passions">أضف المشاعر</string>
+    <string name="edit_passions">تحرير العواطف</string>
+    <string name="passions_makes_it_easier">يجعل الشغف من السهل العثور على من يشاركك اهتماماتك. و 3-5 إلى ملف التعريف الخاص بك لإجراء اتصالات أفضل.</string>
+    <string name="passions_capital">العاطفة</string>
+    <string name="cancel_capi">إلغاء</string>
+    <string name="edit_university_info">تحرير معلومات الجامعة</string>
+    <string name="my_nuniversity_is">لي\nالجامعة</string>
+    <string name="photo_access">الوصول إلى الصور</string>
+    <string name="to_upload_photos_from">لتحميل الصور من جهازك ،\nيحتاج بيندر للوصول إلى ملف\nالصور.\nالرجاء الضغط\'تسمح\' في الخطوة التالية.</string>
+    <string name="report_">تقرير :</string>
+    <string name="report_description_optional">وصف التقرير (اختياري)</string>
+    <string name="tell_us_why_this">أخبرنا لماذا يتم الإبلاغ عن هذا المحتوى. يجب أن يكون كل المحتوى الداعم وثيق الصلة بالإعلان الذي يتم الإبلاغ عنه</string>
+    <string name="submit">إرسال</string>
+    <string name="select_a_reason">اختر سببا</string>
+    <string name="yes_cap">نعم</string>
+    <string name="doyouwanttoremove">هل تريد إزالة المشاعر؟</string>
+    <string name="thiswillremove">سيؤدي هذا إلى إزالة المشاعر المحددة من ملف التعريف الخاص بك.</string>
+    <string name="youmustselect">يجب عليك تحديد ما لا يقل عن 3 عواطف.</string>
+    <string name="todisplaypassions">لعرض المشاعر في ملفك الشخصي ، يجب عليك تحديد 3 عواطف على الأقل.</string>
+
+
+    <string name="error_occurred">حدث خطأ. نحن\'إعادة آسف بشدة.</string>
+    <string name="error_details">تفاصيل الخطأ</string>
+    <string name="restart_app">أعد تشغيل التطبيق</string>
+    <string name="recently_active">نشط مؤخرًا</string>
+    <string name="for_audio_or_video">لمكالمات الصوت أو الفيديو\nيحتاج بيندر للوصول إلى الكاميرا والميكروفون.\nاضغط على "السماح" في الخطوة التالية.</string>
+    <string name="camera_and_microphone_access">الوصول إلى الكاميرا والميكروفون</string>
+    <string name="free">حر</string>
+    <string name="credits_capital">الاعتمادات</string>
+    <string name="_1_superlike_with">(1 أعجاب بشده مع</string>
+    <string name="_5_free_superlikes_every_day">(5 مجانا أعجاب بشده كل يوم)</string>
+    <string name="make_a_bold_first_move_and_show_someone_how_interested_you_are">اتخذ خطوة أولى جريئة وأظهر لشخص ما مدى اهتمامك.</string>
+    <string name="binder_Plus">بيندر زائد</string>
+    <string name="binder_Plus_saves_time">بيندر زائد يوفر الوقت من خلال السماح لك بمعرفة من يحبك. تطابق غير محدود وتمرير وأكثر من ذلك بكثير</string>
+    <string name="binder_Boost">بيندر تعزيز</string>
+    <string name="binder_Boost_allows_you_to">بيندر تعزيز يتيح لك أن تكون أحد أفضل الملفات الشخصية في منطقتك لمدة 30 دقيقة</string>
+    <string name="buy_Now">اشتري الآن</string>
+    <string name="binder_Credits">بيندر الاعتمادات</string>
+    <string name="binder_Credits_are_an">بيندر الاعتمادات هي عملة داخل التطبيق تتيح لك الشراءقوى خارقة</string>
+    <string name="upgrade_from">الترقية من</string>
+    <string name="for_video_Call">لمكالمة الفيديو</string>
+    <string name="for_voice_Call">للمكالمات الصوتية</string>
+    <string name="you_and">انت و</string>
+    <string name="like_each_other"> مثل بعضنا البعض</string>
+    <string name="add">يضيف</string>
+
+    <string name="suggested_accounts">الحسابات المقترحة</string>
+    <string name="add_photos">إضافة الصور</string>
+    <string name="add_at_least_2_photos_to_continue">أضف صورتين على الأقل للمتابعة</string>
+    <string name="my_nbirthday_is">لي\nعيد ميلاد هو</string>
+    <string name="your_age_will_be_public">عمرك سيكون علنيا</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="my_first_nname_is">الخاص بي أولا \nالاسم هو</string>
+    <string name="this_is_how_it_will_appear_in_binder_and_you_will_not_be_able_to_change_it">هذه هي الطريقة التي ستظهر بها فيبيندر, ولن تكون قادرًا على تغييره</string>
+    <string name="forgot_pass">هل نسيت كلمة السر</string>
+    <string name="i_am_a">أنا</string>
+    <string name="show_my_gender_on_my_profile">أظهر جنسى على ملف التعريف الخاص بي</string>
+    <string name="woman">النساء</string>
+    <string name="man">رجل</string>
+    <string name="everyone">كل واحد</string>
+    <string name="log_in_capital">تسجيل الدخول</string>
+    <string name="skip">تخطى</string>
+    <string name="my_nschool_is">لي \nالمدرسة هي</string>
+    <string name="school_name">اسم المدرسة</string>
+    <string name="this_is_how_it_will">هذه هي الطريقة التي ستظهر بها فيبيندر, ولن تكون قادرًا على تغييره</string>
+    <string name="my_nuniversity_is_endline">لي\nالجامعة</string>
+    <string name="let_everyone_know_what_you_re">دع الجميع يعرف ما أنت متحمس له من خلال إضافته إلى ملفك الشخصي.</string>
+    <string name="continue_0_5">متابعة (0/5)</string>
+    <string name="my_password_nis">كلمة المرور الخاصة بي \nيكون</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="my_phone_nnumber_is">هاتفي\nالعدد</string>
+    <string name="enter_4_ndigit_code">أدخل 4\nأرقام رمز</string>
+    <string name="my_sexual_norientation_is">جنسي\nالتوجه</string>
+    <string name="select_up_to_3">حدد ما يصل إلى 3</string>
+    <string name="show_my_orientation_on_my_profile">إظهار توجهي في ملف التعريف الخاص بي</string>
+    <string name="we_need_storage_and_camera_permission_for_upload_profile_pic">نحتاج إلى وحدة تخزين خارجية وإذن الكاميرا لتحميل صور الملف الشخصي.</string>
+    <string name="we_need_storage_permission_for_upload_profile_pic">نحتاج إذن التخزين الخارجي لتحميل صورة الملف الشخصي.</string>
+    <string name="we_need_location_permission_to_give_you_better_app_experience">نحتاج إلى إذن من الموقع لمنحك تجربة تطبيق أفضل.</string>
+    <string name="we_need_storage_and_recording_permission_for_voice_message">نحتاج إلى إذن تخزين وتسجيل صوتي للاتصال بالرسائل الصوتية.</string>
+    <string name="we_need_storage_permission_for_upload_image_into_chat">نحتاج إلى إذن تخزين خارجي لتحميل الصور في الدردشة.</string>
+    <string name="we_need_storage_camera_and_recording_permission_for_voice_calling">نحتاج إلى تخزين وكاميرا وإذن تسجيل للمكالمات الصوتية.</string>
+    <string name="we_need_storage_camera_and_recording_permission_for_video_calling">نحتاج إلى تخزين وكاميرا وإذن تسجيل لمكالمات الفيديو.</string>
+    <string name="we_need_storage_camera_and_recording_permission_for_use_all_feature_of_app">نحتاج إلى إذن تخزين وكاميرا وتسجيل لاستخدام جميع ميزات التطبيق.</string>
+    <string name="we_need_storage_permission_to_save_picture">نحتاج إذن تخزين لحفظ الصورة.</string>
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="welcome_to">مرحبا بك في</string>
+    <string name="please_follow_these_house_rules">يرجى اتباع هذه القواعد الداخلية.</string>
+    <string name="be_yourself">كن نفسك.</string>
+    <string name="stay_safe">ابق آمنًا.</string>
+    <string name="play_it_cool">العبها بشكل رائع.</string>
+    <string name="be_proactive">كن استباقيًا.</string>
+    <string name="always_report_bad_behavior">أبلغ دائمًا عن السلوك السيئ.</string>
+    <string name="respect_others_and_treat_them_as_you_would_like_to_be_treated">احترم الآخرين وعاملهم كما تحب أن تعامل.</string>
+    <string name="make_sure_your_photos_age_and_bio_are_true_to_who_you_are">تأكد من أن صورك وعمرك وسيرتك الذاتية صحيحة مع هويتك.</string>
+    <string name="dont_be_too_quick_to_give_out_personal_information_data_safely">لا تسرع في إعطاء المعلومات الشخصية. التاريخ بأمان</string>
+    <string name="i_agree">أنا موافق</string>
+    <string name="date_safely">التاريخ بأمان</string>
+
+    <string name="verify_my_profile">تحقق من ملفي الشخصي</string>
+    <string name="verify_status">تحقق من الحالة</string>
+    <string name="copy_this_pose_amp_take_a_photo"><![CDATA[انسخ هذا الوضع والتقط صورة]]></string>
+    <string name="we_ll_verify_you">سوف نتحقق منك من خلال مقارنتها بالصور الأخرى الموجودة بالفعل في ملف تعريف Binder الخاص بك</string>
+    <string name="take_my_photo">التقط صورتي</string>
+    <string name="why_is_this_needed">لماذا هذا مطلوب؟</string>
+    <string name="getting_photo_verified">الحصول على صورة التحقق</string>
+    <string name="got_it">فهمتها</string>
+    <string name="verified">تم التحقق</string>
+    <string name="not_verified">لم يتم التحقق منه</string>
+    <string name="verifiedDescription" translatable="false">إن مقارنة صورتك بملفك الشخصي هي الطريقة التي نتحقق بها من أنك شخص حقيقي. إنها تحافظ على أمان Binder وصدقه. \ n التحقق اختياري وسنستخدم صورتك فقط لتأكيد أنك أنت. لتذهب إلى ملف التعريف الخاص بك ، لذلك ليس من الضروري أن تكون أفضل ما لديك.</string>
+    <string name="submit_description">سيجري Binder مسحًا ضوئيًا لصورتك للتحقق من هويتك ، وقد يشمل ذلك استخدام تقنية التعرف على الوجه \ n • سنحتفظ بصورتك وعمليات المسح الضوئي للتحقق من صورك في المستقبل \ n
+اتصل بنا عبر مركز المساعدة الخاص بنا لسحب موافقتك</string>
+    <string name="agree_and_submit">الموافقة والإرسال</string>
+    <string name="retake">إعادة</string>
+    <string name="review_and_save_your_photo">مراجعة وحفظ صورتك</string>
+
+
+    <string name="unlimited_rewinds">رياح غير محدودة</string>
+    <string name="free_superlike_a_day">مجانا مثل يوم واحد</string>
+    <string name="unlimited_boost">دفعة غير محدودة</string>
+
+    <string name="continue_txt">استمرار_ملف</string>
+    <string name="no_thanks"> لا شكرا</string>
+    <string name="subscription_txt">من خلال النقر على "متابعة" ، سيتم خصم دفعتك من Google Play الخاص بك
+        الحساب ، وسيتم تجديد اشتراكك تلقائيًا لنفس الحساب
+        طول الحزمة بنفس السعر حتى تلغيها في الإعدادات في
+        متجر Google Play قبل 24 ساعة على الأقل من نهاية الفترة الحالية.
+        بالنقر على "متابعة" ، فإنك توافق على سياسة الخصوصية وشروطنا.</string>
+    <string name="recuring_billing_cancel_anytime">جاري استرداد الفواتير في أي وقت.</string>
+
+
+    <string name="introducting_binder_boost">تقديم تعزيز الموثق</string>
+    <string name="skip_the_line">تعدى الخط</string>
+    <string name="be_the_top_profile_in_your_area_for_30_minutes_and_get_more_watchs">كن الشخصية البارزة في منطقتك لمدة 30 دقيقة واحصل على المزيد من الساعات</string>
+    <string name="boost_me">تعزيز لي</string>
+    <string name="_08_85_remaining">المتبقي 00:00</string>
+    <string name="you_re_being_seen_by_more_people_keep_swiping_for_the_best_results">يشاهدك المزيد من الأشخاص. استمر في التمرير سريعًا للحصول على أفضل النتائج!</string>
+
+
+    <string name="_0_likes">0 الإعجابات</string>
+
+
+    <string name="get_the_rewind">احصل على الترجيع</string>
+
+
+    <string name="upgrade_to_gold_to_see_people_n_who_already_likes_you">الترقية إلى Gold لرؤية الأشخاص \ n الذين يحبونك بالفعل.</string>
+    <string name="no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you">لا يوجد مستخدمون آخرون يحبون ملفك الشخصي حتى الآن. اشترك معنا وقم بتعزيز ملفك الشخصي حتى يتمكن المزيد من المستخدمين من رؤيتك.</string>
+    <string name="see_who_likes_you">انظر من يحبك</string>
+
+
+    <string name="boost">تعزيز  </string>
+    <string name="save_14">وفر٪ 14</string>
+    <string name="save_34">وفر٪ 34</string>
+
+    <string name="okay">حسنا</string>
+
+
+    <string name="boostDescription">تحتاج إلى </string>
+    <string name="boostDescription1">الائتمان للحصول على المزيد من المباريات.\nزيادة الرصيد الآن - كلما اشتريت أكثر\nأرخص هم.</string>
+    <string name="videocall">مكالمة فيديو</string>
+    <string name="videocallDescription">تحتاج إلى </string>
+    <string name="videocallDescription1">رصيد لإجراء مكالمة فيديو.\nاشحن رصيدك الآن - كلما اشتريت أكثر\nأرخص هم.</string>
+    <string name="superlike">أعجاب بشده</string>
+    <string name="superlikeDescription">اتخذ خطوة أولى جريئة وأظهر لشخص ما مدى اهتمامك. زيادة الرصيد الآن - كلما اشتريت أكثر كلما كان سعرها أرخص.</string>
+    <string name="boost_with_wallet">ادعم بالمحفظة</string>
+    <string name="_1_boost_with_">(1 دفعة مع</string>
+    <string name="coins_">عملات معدنية)</string>
+    <string name="or">أو</string>
+    <string name="get_binder_gold">احصل على الذهب الملصق</string>
+    <string name="_1_free_boost_every_month">(دفعة مجانية واحدة كل شهر)</string>
+    <string name="credits">الاعتمادات</string>
+    <string name="videos">أشرطة فيديو </string>
+    <string name="get_free_credits">احصل على ائتمانات مجانية</string>
+    <string name="pick_one_of_the_below_options_and_receive_nfree_credits">اختر أحد الخيارات أدناه واستلم\nائتمانات مجانية!</string>
+    <string name="Remaining">متبقي</string>
+    <string name="continue_capital">استمر</string>
+    <string name="from">من عند  </string>
+    <string name="likes">الإعجابات</string>
+    <string name="tap_to_exist">اضغط مجدداً للخروج</string>
+    <string name="permission_alert">تنبيه الإذن</string>
+    <string name="permission">الإذن</string>
+    <string name="google_play_services_is_not_available">خدمات Google Play غير متوفرة.</string>
+    <string name="we_need_location_permission_to_show_you_nearby_contents">نحتاج إلى إذن موقع لنظهر لك المحتويات القريبة.</string>
+    <string name="watch_content_nearby">مشاهدة المحتوى في مكان قريب</string>
+    <string name="find_more_people_places_and_event_area">البحث عن المزيد من الناس والأماكن ومنطقة الحدث</string>
+    <string name="learn_more">يتعلم أكثر</string>
+    <string name="get_started">البدء</string>
+    <string name="minute">دقيقة</string>
+    <string name="minutes">دقائق</string>
+    <string name="according_to_your_credits_we_only_allow_you">وفقًا لرصيدك، نسمح لك فقط بـ</string>
+</resources>

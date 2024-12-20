@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivitiesFragments.Inbox.InboxF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_discovery_gray"
+                app:tint="@color/pink_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/searchEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/search"
+                    android:textColorHint="@color/newGrayTextColor"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/pink_color"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_matches"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/pink_color"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/likes_count_layout"
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                tools:ignore="MissingConstraints"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/d_circle_pink_border"
+                    android:padding="1dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="@dimen/_24sdp"
+                        app:cardBackgroundColor="@android:color/transparent">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:id="@+id/userLikeImage"
+                            app:roundAsCircle="true"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:actualImageScaleType="fitCenter"
+                            fresco:placeholderImage="@drawable/ic_user_icon" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/likes_count_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/_0_likes"
+                    android:textSize="11dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/match_list"
+                android:layout_toEndOf="@+id/likes_count_layout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_other_match_found_yet"
+                android:textColor="@color/dimgray"
+                android:textSize="13dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:id="@+id/no_match_txt"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/pink_color"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <com.chauthai.overscroll.RecyclerViewBouncy
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/inboxlist">
+
+        </com.chauthai.overscroll.RecyclerViewBouncy>
+
+    </LinearLayout>
+
+</FrameLayout>

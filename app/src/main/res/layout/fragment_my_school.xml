@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/Goback"
+                        android:layout_width="48dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_back_arrow"
+                        android:scaleType="fitStart"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/skip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/skip"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/newGrayColor"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/main_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:paddingTop="20dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_nschool_is"
+                    android:textSize="@dimen/_30sdp"/>
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/continueButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_google_background"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/continue_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/continue_capital"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            android:textColor="@color/gray"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:paddingTop="20dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp">
+
+                <TextView
+                    android:id="@+id/school_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="@string/school_name"
+                    android:textColor="@color/newGrayTextColor"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/newGrayTextColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingTop="10dp"
+                    android:text="@string/this_is_how_it_will_appear_in_binder_and_you_will_not_be_able_to_change_it"
+                    android:textColor="@color/newGrayTextColor"
+                    android:textSize="@dimen/_9sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchSchool_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/top_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/my_nuniversity_is"
+                    android:textColor="@color/newGrayColor"
+                    android:textSize="16dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/cross"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_cross_white"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitStart"
+                    app:tint="@color/newGrayColor"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/top_rl">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/searchSchool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/school"
+                        android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/newGrayTextColor"
+                        android:textSize="16dp" />
+
+                    <ProgressBar
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/progress_bar"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_school" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

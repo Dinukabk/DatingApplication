@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qboxus.binder.ActivitiesFragments.inapppurchases.BoostF"
+    android:clickable="true"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.9"
+            android:id="@+id/transparent_layout"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_16sdp"
+            android:clickable="true"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/d_boost_gradient">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:text="Introducing Binder Credits" />
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_superlike" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/superlike"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginEnd="@dimen/_22sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="@string/make_a_bold_first_move_and_show_someone_how_interested_you_are"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/walletView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_38sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/d_round_blue_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="SUPERLIKE WITH WALLET"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"/>
+
+                            <TextView
+                                android:id="@+id/boostDescTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"/>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/seperaterView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.8dp"
+                                android:background="@color/newLightGray"
+                                android:layout_toStartOf="@+id/orTv1"
+                                android:layout_centerVertical="true"/>
+
+                            <TextView
+                                android:id="@+id/orTv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="@string/or"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="@color/newLightGray"
+                                android:includeFontPadding="false"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.8dp"
+                                android:background="@color/newLightGray"
+                                android:layout_toEndOf="@+id/orTv1"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/goldView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_38sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/d_round_blue_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/get_binder_gold"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/_5_free_superlikes_every_day"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"/>
+
+                        </LinearLayout>
+
+                        <!--<RelativeLayout
+                            android:id="@+id/seperaterView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp">
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.8dp"
+                                android:background="@color/newLightGray"
+                                android:layout_toStartOf="@+id/orTv"
+                                android:layout_centerVertical="true"/>
+
+                            <TextView
+                                android:id="@+id/orTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="@string/or"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="@color/newLightGray"
+                                android:includeFontPadding="false"/>
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.8dp"
+                                android:background="@color/newLightGray"
+                                android:layout_toEndOf="@+id/orTv"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/boost_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_38sdp"
+                            android:background="@drawable/ic_pink_background">
+
+                            <TextView
+                                android:id="@+id/cancelTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/cancel_capi"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"/>
+
+                        </RelativeLayout>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

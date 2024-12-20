@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/d_round_white_bkg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingStart="@dimen/_18sdp"
+    android:paddingEnd="@dimen/_18sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/headerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/newLightGray"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <TextView
+            android:id="@+id/cancelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="@string/cancel_capi"
+            android:textColor="@color/newLightGray"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/yesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

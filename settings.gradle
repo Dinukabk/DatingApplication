@@ -1,0 +1,25 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//        jcenter()
+//    }
+//}
+
+include ':app'
+
+//include 'cardstackview'
+//include 'iosdialog'
+//include 'overscroll-bouncy'
+
+//project (':cardstackview').projectDir = new File(settingsDir, "../deps/CardStackView-master/cardstackview")
+//project (':iosdialog').projectDir = new File(settingsDir, "../deps/IOSDialog-master/iosdialog")
+//project (':overscroll-bouncy').projectDir = new File(settingsDir, "../deps/overscroll-bouncy-android-master/overscroll-bouncy")

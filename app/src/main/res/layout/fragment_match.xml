@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:context=".ActivitiesFragments.Matchs.MatchF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.9"
+            android:id="@+id/transparent_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:layout_margin="15dp"
+                    android:id="@+id/cross_btn"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_cross_black"
+                    app:tint="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/it_s_match"
+                        android:textSize="@dimen/_35sdp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:id="@+id/match_txt"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:textColor="@color/white"
+                        android:text="@string/you_and_alison_likes_each_other"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:id="@+id/user1_pic"
+                            app:roundAsCircle="true"
+                            app:roundingBorderWidth="2dp"
+                            app:roundingBorderColor="@color/white"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:actualImageScaleType="fitCenter"
+                            fresco:placeholderImage="@drawable/ic_user_icon"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:id="@+id/user2_pic"
+                            app:roundAsCircle="true"
+                            app:roundingBorderWidth="2dp"
+                            app:roundingBorderColor="@color/white"
+                            app:placeholderImageScaleType="centerCrop"
+                            app:actualImageScaleType="fitCenter"
+                            android:layout_marginStart="140dp"
+                            fresco:placeholderImage="@drawable/ic_user_icon"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <ImageView
+                            android:id="@+id/superLike"
+                            android:layout_width="@dimen/_31sdp"
+                            android:layout_height="@dimen/_31sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_superlike_bg"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:id="@+id/send_message_layout"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:background="@drawable/ic_pink_background"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_30sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_send_message"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_a_message"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

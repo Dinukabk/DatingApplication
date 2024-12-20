@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SignSeekBar">
+        <attr name="ssb_min" format="float|reference"/> <!--min < max, default: 0.0f-->
+        <attr name="ssb_max" format="float|reference"/> <!--min < max, default: 100.0f-->
+        <attr name="ssb_progress" format="float|reference"/> <!--real time progress value, default: min-->
+        <attr name="ssb_is_float_type" format="boolean"/> <!--support for float type-->
+        <attr name="ssb_track_size" format="dimension|reference"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr name="ssb_second_track_size" format="dimension|reference"/>
+        <attr name="ssb_thumb_radius" format="dimension|reference"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr name="ssb_thumb_radius_on_dragging" format="dimension|reference"/>
+        <attr name="ssb_track_color" format="color|reference"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr name="ssb_second_track_color" format="color|reference"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr name="ssb_thumb_color" format="color|reference"/> <!--color of thumb, default: same as left-track's color-->
+        <attr name="ssb_section_count" format="integer|reference"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr name="ssb_show_section_mark" format="boolean"/> <!--show demarcation points or not, default: false-->
+        <attr name="ssb_auto_adjust_section_mark" format="boolean"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr name="ssb_show_section_text" format="boolean"/> <!--show section-text or not, default: false-->
+        <attr name="ssb_section_text_size" format="dimension|reference"/> <!--text size of section-text, default: 14sp-->
+        <attr name="ssb_section_text_color" format="color|reference"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="ssb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr name="ssb_section_text_interval" format="integer"/> <!--the interval of two section-text, default: 1-->
+        <attr name="ssb_show_thumb_text" format="boolean"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr name="ssb_thumb_text_size" format="dimension|reference"/> <!--text size of progress-text, default: 14sp-->
+        <attr name="ssb_thumb_text_color" format="color|reference"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr name="ssb_show_progress_in_float" format="boolean"/> <!--show Sign-progress in float or not, default: false-->
+        <attr name="ssb_touch_to_seek" format="boolean"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr name="ssb_seek_by_section" format="boolean"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr name="ssb_sign_color" format="color|reference"/> <!--color of sign, default: same as left-track's color-->
+        <attr name="ssb_sign_border_color" format="color|reference"/> <!--color of sign, border-->
+        <attr name="ssb_sign_show_border" format="boolean"/> <!--color of sign, default: same as left-track's color-->
+        <attr name="ssb_sign_text_size" format="dimension|reference"/> <!--text size of sign-progress, default: 14sp-->
+        <attr name="ssb_sign_border_size" format="dimension|reference"/> <!--border size, default: 1dp-->
+        <attr name="ssb_sign_text_color" format="color|reference"/> <!--text color of sign-progress, default: #ffffffff-->
+        <attr name="ssb_anim_duration" format="integer"/> <!--duration of animation, default: 200ms-->
+        <attr name="ssb_show_sign" format="boolean"/> <!--hide sign, default: false-->
+        <attr name="ssb_text_space" format="dimension|reference"/><!--default:2dp-->
+        <attr name="ssb_sides_labels" format="reference"/><!--default:null-->
+        <attr name="ssb_thumb_bg_alpha" format="float|reference"/> <!--0.0f-1.0f, default: 0.2f-->
+        <attr name="ssb_thumb_ratio" format="float|reference"/> <!--0.0f-1.0f, default: 0.7f-->
+        <attr name="ssb_show_thumb_shadow" format="boolean"/> <!--0.0f-1.0f, default: false-->
+        <attr name="ssb_sign_arrow_autofloat" format="boolean"/> <!--sign arrow auto float, default: true-->
+        <attr name="ssb_sign_height" format="dimension|reference"/> <!--sign height,default:22dp-->
+        <attr name="ssb_sign_width" format="dimension|reference"/> <!--sign_width ,default:72dp-->
+        <attr name="ssb_sign_arrow_height" format="dimension|reference"/> <!--sign arrow height ,default:3dp-->
+        <attr name="ssb_sign_arrow_width" format="dimension|reference"/> <!--sign arrow width, default:5dp-->
+        <attr name="ssb_sign_round" format="dimension|reference"/> <!--sign round, default:3dp-->
+        <attr name="ssb_unusable_color" format="color|reference"/> <!--unusable text color, default:Color.GRAY-->
+    </declare-styleable>
+
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="viewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="centerCrop" value="2"/>
+            <enum name="centerInside" value="3"/>
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+        </attr>
+        <attr name="cropAutoZoomEnabled" format="boolean"/>
+        <attr name="cropMaxZoom" format="integer"/>
+        <attr name="cropMultiTouchEnabled" format="boolean"/>
+        <attr name="cropFixAspectRatio" format="boolean"/>
+        <attr name="cropAspectRatioX" format="integer"/>
+        <attr name="cropAspectRatioY" format="integer"/>
+        <attr name="cropInitialCropWindowPaddingRatio" format="float"/>
+        <attr name="cropBorderLineThickness" format="dimension"/>
+        <attr name="cropBorderLineColor" format="color"/>
+        <attr name="cropBorderCornerThickness" format="dimension"/>
+        <attr name="cropBorderCornerOffset" format="dimension"/>
+        <attr name="cropBorderCornerLength" format="dimension"/>
+        <attr name="cropBorderCornerColor" format="color"/>
+        <attr name="cropGuidelinesThickness" format="dimension"/>
+        <attr name="cropGuidelinesColor" format="color"/>
+        <attr name="cropBackgroundColor" format="color"/>
+        <attr name="cropSnapRadius" format="dimension"/>
+        <attr name="cropTouchRadius" format="dimension"/>
+        <attr name="cropSaveBitmapToInstanceState" format="boolean"/>
+        <attr name="cropShowCropOverlay" format="boolean"/>
+        <attr name="cropShowProgressBar" format="boolean"/>
+        <attr name="cropMinCropWindowWidth" format="dimension"/>
+        <attr name="cropMinCropWindowHeight" format="dimension"/>
+        <attr name="cropMinCropResultWidthPX" format="float"/>
+        <attr name="cropMinCropResultHeightPX" format="float"/>
+        <attr name="cropMaxCropResultWidthPX" format="float"/>
+        <attr name="cropMaxCropResultHeightPX" format="float"/>
+        <attr name="cropFlipHorizontally" format="boolean"/>
+        <attr name="cropFlipVertically" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RangeBar">
+        <attr name="mrb_tickStart" format="float" />
+        <attr name="mrb_tickEnd" format="float" />
+        <attr name="mrb_tickInterval" format="float" />
+        <attr name="mrb_tickHeight" format="dimension" />
+        <attr name="mrb_tickDefaultColor" format="color" />
+        <attr name="mrb_tickColors" format="reference" />
+        <attr name="mrb_tickLabelColor" format="color" />
+        <attr name="mrb_tickLabelSelectedColor" format="color" />
+        <attr name="mrb_tickBottomLabels" format="reference" />
+        <attr name="mrb_tickTopLabels" format="reference" />
+        <attr name="mrb_tickDefaultLabel" format="reference|string" />
+        <attr name="mrb_tickLabelSize" format="dimension" />
+        <attr name="mrb_barWeight" format="dimension" />
+        <attr name="mrb_rangeBarColor" format="reference|color" />
+        <attr name="mrb_minThumbDistance" format="float"/>
+        <attr name="mrb_thumbSize" format="dimension" />
+        <attr name="mrb_thumbBoundaryColor" format="reference|color" />
+        <attr name="mrb_thumbBoundarySize" format="dimension" />
+        <attr name="mrb_thumbColor" format="reference|color" />
+        <attr name="mrb_leftThumbColor" format="reference|color" />
+        <attr name="mrb_rightThumbColor" format="reference|color" />
+        <attr name="mrb_pinTextColor" format="reference|color" />
+        <attr name="mrb_pinColor" format="reference|color" />
+        <attr name="mrb_pinPadding" format="dimension" />
+        <attr name="mrb_pinMinFont" format="dimension" />
+        <attr name="mrb_pinMaxFont" format="dimension" />
+        <attr name="mrb_rangeBarPaddingBottom" format="dimension" />
+        <attr name="mrb_rangeBar" format="boolean" />
+        <attr name="mrb_temporaryPins" format="boolean" />
+        <attr name="mrb_rangeBar_rounded" format="boolean" />
+        <attr name="mrb_connectingLineWeight" format="dimension" />
+        <attr name="mrb_connectingLineColor" format="reference|color" />
+        <attr name="mrb_pinRadius" format="dimension" />
+        <attr name="mrb_connectingLineColors" format="reference" />
+        <attr name="mrb_onlyOnDrag" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="expandableLayout">
+        <attr name="ael_duration" format="integer" />
+        <attr name="ael_expanded" format="boolean" />
+        <attr name="ael_defaultChildIndex" format="integer" />
+        <attr name="ael_defaultPosition" format="dimension" />
+        <attr name="ael_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ael_interpolator" format="enum">
+            <enum name="accelerateDecelerate" value="0" />
+            <enum name="accelerate" value="1" />
+            <enum name="anticipate" value="2" />
+            <enum name="anticipateOvershoot" value="3" />
+            <enum name="bounce" value="4" />
+            <enum name="decelerate" value="5" />
+            <enum name="fastOutLinearIn" value="6" />
+            <enum name="fastOutSlowIn" value="7" />
+            <enum name="linear" value="8" />
+            <enum name="linearOutSlowIn" value="9" />
+            <enum name="overshoot" value="10" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="md_divider" format="color" />
+
+    <!-- Accessible global theming attributes -->
+    <attr name="md_dark_theme" format="boolean" />
+    <attr name="md_background_color" format="color" />
+
+    <declare-styleable name="CamomileSpinner">
+        <attr name="spinnerColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="clockwise" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewBouncy">
+        <attr name="tension" format="integer" />
+        <attr name="friction" format="integer" />
+        <attr name="speedFactor" format="integer" />
+        <attr name="gapLimit" format="integer" />
+        <attr name="viewCountEstimateSize" format="integer" />
+        <attr name="maxAdapterSizeToEstimate" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CardStackView">
+        <attr name="visibleCount" format="integer"/>
+        <attr name="swipeThreshold" format="float"/>
+        <attr name="translationDiff" format="float"/>
+        <attr name="scaleDiff" format="float"/>
+        <attr name="stackFrom" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <attr name="elevationEnabled" format="boolean"/>
+        <attr name="swipeEnabled" format="boolean"/>
+        <attr name="swipeDirection" format="enum">
+            <enum name="freedom" value="0"/>
+            <enum name="freedom_no_bottom" value="1"/>
+            <enum name="horizontal" value="2"/>
+            <enum name="vertical" value="3"/>
+        </attr>
+        <attr name="leftOverlay" format="reference"/>
+        <attr name="rightOverlay" format="reference"/>
+        <attr name="bottomOverlay" format="reference"/>
+        <attr name="topOverlay" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_26sdp"
+    android:checkable="false"
+    android:clickable="false"
+    android:background="@null"
+    app:rippleColor="@null"
+    android:stateListAnimator="@null"
+    android:focusable="true"
+    android:maxHeight="@dimen/_26sdp"
+    app:chipMinHeight="@dimen/_26sdp"
+    android:textColor="@color/newGrayTextColor"
+    android:paddingStart="@dimen/_6sdp"
+    android:paddingEnd="@dimen/_6sdp"
+    android:textSize="@dimen/_10sdp"
+    app:chipBackgroundColor="@color/white"
+    app:chipCornerRadius="@dimen/_13sdp"
+    app:chipStrokeColor="@color/chipBorderColor"
+    app:chipStrokeWidth="@dimen/_1sdp"
+    app:ensureMinTouchTargetSize="false">
+
+</com.google.android.material.chip.Chip>

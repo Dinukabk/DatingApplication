@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintDimensionRatio="1:1.4"
+        tools:ignore="MissingConstraints">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:roundedCornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/d_round_gray_bkg"
+            app:placeholderImageScaleType="centerCrop"
+            app:actualImageScaleType="centerCrop" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_cross"
+            android:background="@color/transparent"
+            android:scaleType="fitEnd"
+            android:id="@+id/cross_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_round_add_btn"
+            android:background="@color/transparent"
+            android:scaleType="fitEnd"
+            android:id="@+id/add_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

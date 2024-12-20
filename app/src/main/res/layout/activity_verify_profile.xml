@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ActivitiesFragments.Profile.VerifyProfileA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:id="@+id/back_btn"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_cross_black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_180sdp"
+                app:cardBackgroundColor="@color/coloraccent"
+                app:cardCornerRadius="@dimen/_15sdp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/testImage"
+                    android:scaleType="centerCrop"
+                    app:actualImageResource="@drawable/ic_person_thumbsup"
+                    app:roundedCornerRadius="@dimen/_15sdp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:id="@+id/userImage"
+                android:visibility="gone"
+                app:roundedCornerRadius="@dimen/_15sdp"
+                android:src="@drawable/ic_person_thumbsup" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/beforeSelectedLayout"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copy_this_pose_amp_take_a_photo"
+                android:textSize="@dimen/_22sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/we_ll_verify_you"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/dark_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/afterSelectedLayout"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review_and_save_your_photo"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_description"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/dark_gray"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:id="@+id/takePhotoBtn"
+            android:text="@string/take_my_photo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_pink_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/whyneedbtn"
+            android:text="@string/why_is_this_needed"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/d_round_gray_25"/>
+
+    </LinearLayout>
+
+</LinearLayout>
